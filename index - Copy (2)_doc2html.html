@@ -4,10 +4,12 @@
 <head>
 	<title>Word2CleanHTML</title>
 
-	<script src="tinymce/tinymce.min.js"></script>
-	<script src="tinymce/TinyMCE-js-beautify/js/lib/beautify-html.js"></script>
-	<script src="filesaverjs/fileSaver.js"></script>
+	<!-- <script src="tinymce/js/tinymce/tinymce.min.js"></script>
+	<script src="tinymce/js/TinyMCE-js-beautify/js/lib/beautify-html.js"></script>
+	<script src="filesaverjs/fileSaver.js"></script> -->
 
+	<script src="https://cdn.tiny.cloud/1/fst9zn7h6eap6qn4s9srj9tdt91t6hhgigiorfhas2nnwzkz/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>	  
+	<script>tinymce.init({selector:'textarea'});</script>
 	<style>
 		select {
 			width: 100%;
@@ -130,7 +132,8 @@
 		plugins: [
 			"advlist autolink link image lists charmap print preview hr anchor pagebreak ",
 			"searchreplace wordcount visualblocks visualchars insertdatetime media nonbreaking",
-			"table directionality emoticons paste code"
+			"table directionality emoticons paste code",
+			"code"
 		],
 		external_plugins: {
 			"codebeautify": "TinyMCE-js-beautify/TinyMCEplugin/plugin.js"
