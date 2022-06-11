@@ -1,0 +1,28 @@
+var myCat = {
+    "name":"Meo",
+    "species":"cat",
+    "favFood":"tuna"
+}
+
+var myFavColors = ["blue","red","purple","green"];
+var thePets = [
+    {
+        "name":"Meo",
+        "species":"cat",
+        "favFood":"tuna"
+    },
+    {
+        "name":"Barky",
+        "species":"dog",
+        "favFood":"carrots"
+    },
+    {
+        "name":"Purrpaws",
+        "species":"cat",
+        "foods":{
+            "likes":["mices"],
+            "dislike":["cookies"]
+        }
+    }
+];
+console.log(thePets[1].favFood)
